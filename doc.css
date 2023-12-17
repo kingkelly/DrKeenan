@@ -21,12 +21,12 @@ Body {
 	margin: 0 auto;
 	display: flex;
 	padding: 90px 50px;
+	flex-wrap: wrap;
 }
 
 .half {
 	width: 50%;
 	align-items: center;
-
 }
 
 .desc {
@@ -49,12 +49,12 @@ line-height: 45px;
 }
 
 .butt {
-	padding: 15px 44px;
+	padding: 7px 38px;
 	background-color: var(--col);
 	color: white;
 	font-weight: 700;
 	text-align: center;
-	display: inline;
+	width: fit-content;
 	border-radius: 8px;
 	transition: .6s;
 }
@@ -71,7 +71,7 @@ a {
 }
 
 .fullbg {
-	background-color: #f6f6f6;
+	background-color: #F3FAF9;
 	width: 100%;
 }
 
@@ -86,6 +86,7 @@ a {
 	padding: 35px 35px;
 	width: 70%;
 	margin: 0 auto;
+	margin-top: 30px;
 }
 
 .boxtitle {
@@ -114,4 +115,45 @@ a {
 
 .textlink:hover {
 	text-decoration: underline;
+}
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+.butt {
+width: auto;
+}
+
+.desc, .paragraph, .reportspic{
+	width: 100%;
+}
+
+.box {
+	width: auto;
+}
+
+}
+
+@media only screen and (max-width: 768px) {
+
+.full {
+	flex-direction: column;
+}
+
+.half {
+	width: 100%;
+	align-items: flex-start;
+}
+
+.profile {
+	margin-top: 60px;
+}
+
+.box {
+	width: auto;
+}
+
 }
