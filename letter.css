@@ -13,7 +13,7 @@ Body {
 
 a {
 	text-decoration: none;
-	color: #558FFF;
+	color: #1765FF;
 }
 
 a:hover {
@@ -118,5 +118,13 @@ a:hover {
 	filter: brightness(1.1);
 	transition: .2s;
 	cursor: pointer;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+
+
+
 }
 
